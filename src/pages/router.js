@@ -1,20 +1,13 @@
-import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import PagesPromotionSearch from './Promotion/Search/Search';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import PagesPromotionSearch from "./Promotion/Search/Search";
 
 const router = () => {
-    return(
-        <Router>
-            <Switch>
-                <Route path="/" component={PagesPromotionSearch} />
-            </Switch>
-        </Router>
-    );
+  return (
+    <Routes>
+      <Route path="/" element={<PagesPromotionSearch />} />
+    </Routes>
+  );
 };
 
 export default router;
