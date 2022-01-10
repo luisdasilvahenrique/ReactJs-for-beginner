@@ -13,7 +13,11 @@ const PromotionCard = ({ promotion })  => (
                 )}
 
                 <div className="promotion-card__comments-count">{promotion.comments.length} {promotion.comments.length > 1 ? 'Comentários' : 'Comentário'}</div>
-                <a href={promotion.url} target={"_blank"} className="promotion-card__link"> IR PARA O SITE</a>
+                <a 
+                href={promotion.url} 
+                target={"_blank"} 
+                rel="noopener noreferrer"
+                className="promotion-card__link"> IR PARA O SITE</a>
             </footer>
         </div>
     </div>
